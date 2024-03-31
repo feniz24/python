@@ -17,9 +17,9 @@ titles_list = [title.getText().strip() for title in titles_links]
 # print(titles_list[:100])
 top_100 = titles_list[:100]
 
-spotify_client_id = "94244f3b40d04cbab56322d82b563e0f"
-spotify_client_secret = "01939e3d779045c8bad479bd414ebfa4"
-spotify_user_name = "31h7zdiue5ye2kckrkee6uhg4hna"
+spotify_client_id = ""
+spotify_client_secret = ""
+spotify_user_name = ""
 
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
