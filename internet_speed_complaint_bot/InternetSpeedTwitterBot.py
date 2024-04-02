@@ -6,8 +6,8 @@ import time
 PROMISED_DOWN = 150
 PROMISED_UP = 10
 
-TWITTER_USERNAME = "feniz_24"
-TWITTER_PASSWORD = "12345Tho"
+TWITTER_USERNAME = ""
+TWITTER_PASSWORD = ""
 
 
 class InternetSpeedTwitterBot:
