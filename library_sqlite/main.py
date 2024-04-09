@@ -42,7 +42,6 @@ def add():
 @app.route("/edit", methods=["GET", "POST"])
 def edit_rating():
     if request.method == "POST":
-        # UPDATE RECORD
         book_id = request.form["id"]
         book_to_update = db.session.execute(db.select(Book).filter_by(id=book_id)).scalar_one()
         book_to_update.rating = request.form["rating"]
