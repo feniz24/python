@@ -6,10 +6,10 @@ from wtforms import StringField, FloatField, SubmitField
 from wtforms.validators import DataRequired
 import requests
 
-MOVIE_API = 'a3820120f40ef1036be44ec89f3f49ec'
-API_READ_ACCESS = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMzgyMDEyMGY0MGVmMTAzNmJlNDRlYzg5ZjNmNDllYyIsInN1YiI6IjY2MTM3ZjhjMGJiMDc2MDE4NTMwNTE5ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Q__HlB13s7VFoglSWURXaEECb6fifAv3opMPzWcgJbI'
+MOVIE_API = ''
+API_READ_ACCESS = ''
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = ''
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///movies.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app, session_options={'expire_on_commit': False})
@@ -17,7 +17,7 @@ Bootstrap(app)
 
 headers = {
             "accept": "application/json",
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMzgyMDEyMGY0MGVmMTAzNmJlNDRlYzg5ZjNmNDllYyIsInN1YiI6IjY2MTM3ZjhjMGJiMDc2MDE4NTMwNTE5ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Q__HlB13s7VFoglSWURXaEECb6fifAv3opMPzWcgJbI"
+            "Authorization": ""
         }
 
 
