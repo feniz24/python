@@ -103,7 +103,6 @@ def add():
 @app.route('/select', methods=["POST", "GET"])
 def select():
     movie_id = request.args.get('id')
-    print(movie_id)
     movie_url = f"https://api.themoviedb.org/3/movie/{movie_id}"
     response = requests.get(movie_url, headers=headers)
     movie_data = response.json()
